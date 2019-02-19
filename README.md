@@ -187,13 +187,13 @@ The default for `['slurm']['accounting']['conf']` is:
 {
   AuthType: 'auth/munge',
   AuthInfo: node['slurm']['munge']['auth_socket'],
-  DbdHost: node['fqdn'], 
+  DbdHost: node['hostname'], 
   DebugLevel: node['slurm']['accounting']['debug'],
   LogFile: '/var/log/slurm-llnl/slurmdbd.log', # default is syslog
   MessageTimeout: '10',
   PidFile: node['slurm']['accounting']['pid_file'], 
   SlurmUser: node['mysql']['user']['slurm'],
-  StorageHost: node['fqdn'], 
+  StorageHost: node['hostname'], 
   StorageLoc: 'slurm_acct_db',
   StoragePort: node['mysql']['port'],
   StorageType: 'accounting_storage/mysql',

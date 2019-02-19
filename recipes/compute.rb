@@ -28,7 +28,7 @@ origin = node['slurm']['controller'].nil? ? control_machine : nfs_apps_server
     dump 0
     pass 0
     action
-    only_if { origin != node['fqdn'] }
+    only_if { origin != node['hostname'] }
   end
 end
 
@@ -41,7 +41,7 @@ mount homes_dir.to_s do
   dump 0
   pass 0
   action [:enable, :mount]
-  only_if { origin != node['fqdn'] }
+  only_if { origin != node['hostname'] }
 end
 # ###########################################################################################
 # service activation

@@ -37,5 +37,5 @@ end
 
 service 'Slurm Accounting Service' do
   service_name 'slurmdbd'
-  action :nothing
+  action :start
 end
