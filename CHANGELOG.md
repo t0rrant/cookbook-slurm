@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
-This file is used to list changes made in each version of the slurm-cluster cookbook.
+This file is used to list changes made in each version of the slurm cookbook.
 
 ## 0.3.8
 

@@ -6,9 +6,9 @@ if !node['proxy'].nil? && !node['proxy']['http'].nil?
       owner 'root'
       group'root'
       mode '755'
-      content "Acquire::http::proxy #{ node['proxy']['http']};
-Acquire::ftp::proxy #{ node['proxy']['http']};
-Acquire::https::proxy #{ node['proxy']['http']};"
+      content "Acquire::http::proxy #{node['proxy']['http']};
+Acquire::ftp::proxy #{node['proxy']['http']};
+Acquire::https::proxy #{node['proxy']['http']};"
     end
   end
 
@@ -17,10 +17,10 @@ Acquire::https::proxy #{ node['proxy']['http']};"
     owner 'root'
     group'root'
     mode '755'
-    content "export http_proxy=#{ node['proxy']['http']}
-export https_proxy=#{ node['proxy']['http']}
-export ftp_proxy=#{ node['proxy']['http']}
-export all_proxy=#{ node['proxy']['http']}"
+    content "export http_proxy=#{node['proxy']['http']}
+export https_proxy=#{node['proxy']['http']}
+export ftp_proxy=#{node['proxy']['http']}
+export all_proxy=#{node['proxy']['http']}"
   end
 
   # proxy config for the whole environment (as seen by InSpec)
@@ -28,9 +28,9 @@ export all_proxy=#{ node['proxy']['http']}"
     owner 'root'
     group'root'
     mode '755'
-    content "export http_proxy=#{ node['proxy']['http']}
-export https_proxy=#{ node['proxy']['http']}
-export ftp_proxy=#{ node['proxy']['http']}
-export all_proxy=#{ node['proxy']['http']}"
+    content "export http_proxy=#{node['proxy']['http']}
+export https_proxy=#{node['proxy']['http']}
+export ftp_proxy=#{node['proxy']['http']}
+export all_proxy=#{node['proxy']['http']}"
   end
 end

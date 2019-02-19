@@ -2,7 +2,7 @@ class ::Chef::Recipe
   include ::Slurm
 end
 
-include_recipe 'slurm-cluster::_systemd_daemon_reload'
+include_recipe 'slurm::_systemd_daemon_reload'
 
 # ###########################################################################################
 # package installation

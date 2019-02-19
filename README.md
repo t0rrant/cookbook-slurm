@@ -51,43 +51,43 @@ The use case for this run_list is to setup a monolith which contains all of the 
 
 ## Recipes
 
-### slurm-cluster::_disable_ipv6
+### slurm::_disable_ipv6
 
 - Disable ipv6 on a Linux system.
 
-### slurm-cluster::_systemd_daemon_reload
+### slurm::_systemd_daemon_reload
 
 - Makes available forcing a `daemon-reload` on systemd, in order to refresh service unit files.
   
-### slurm-cluster::accounting
+### slurm::accounting
 
 - Installs and configures slurmdbd, slurms' accounting service.
 
-### slurm-cluster::cluster
+### slurm::cluster
 
 - *TODO* sets up a dynamic resource allocation cluster.
 
-### slurm-cluster::compute
+### slurm::compute
 
 - Installs and configures slurmd, slurms' compute service.
 
-### slurm-cluster::database
+### slurm::database
 
 - Installs and configures a MariaDB service.
 
-### slurm-cluster::default
+### slurm::default
 
 - Installs packages common to all slurms' services.
 
-### slurm-cluster::munge
+### slurm::munge
 
 - Installs and configures munge authentication service.
 
-### slurm-cluster::plugin_shifter
+### slurm::plugin_shifter
 
 - *TODO* sets up shifter plugin for slurm.
  
-### slurm-cluster::server
+### slurm::server
 
 - Installs and configures slurmctld, slurms' controller service.
 

@@ -1,10 +1,10 @@
 if os.debian?
   %w(mailutils
-   slurm-wlm
-   slurm-wlm-basic-plugins
-   sview
-   nfs-kernel-server
-   nfs-common).each do |pkg|
+     slurm-wlm
+     slurm-wlm-basic-plugins
+     sview
+     nfs-kernel-server
+     nfs-common).each do |pkg|
     describe package(pkg) do
       it { should be_installed }
     end

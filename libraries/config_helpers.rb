@@ -1,7 +1,7 @@
 # encoding: UTF-8
 
 #
-# Cookbook Name:: slurm-cluster
+# Cookbook Name:: slurm
 # library:: config_helpers
 #
 # Based on work from the openstack-common cookbook
