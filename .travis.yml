@@ -4,7 +4,7 @@ dist: xenial
 addons:
   apt:
     sources:
-      - chef-current-xenial
+      - sourceline: "deb https://packages.chef.io/repos/apt/latest xenial main"
     packages:
       - chefdk
 
