@@ -28,12 +28,12 @@ platforms:
 suites:
   - name: monolith
     run_list:
-      - recipe[slurm-cluster::database]
-      - recipe[slurm-cluster::default]
-      - recipe[slurm-cluster::accounting]
-      - recipe[slurm-cluster::server]
-      - recipe[slurm-cluster::compute]
-      - recipe[slurm-cluster::plugin_shifter]
+      - recipe[slurm::database]
+      - recipe[slurm::default]
+      - recipe[slurm::accounting]
+      - recipe[slurm::server]
+      - recipe[slurm::compute]
+      - recipe[slurm::plugin_shifter]
     verifier:
       inspec_tests:
         - test/integration/database
