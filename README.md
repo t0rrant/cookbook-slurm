@@ -31,6 +31,7 @@ is at least *17.02* due to hostname behaviour of slurmdbd.
 ## TODO
 
 - Support for RHEL family
+- Make cgroup.conf file dynamic
 - Add recipe to setup a dynamic resource allocation cluster
 - Install slurm from static stable sources, i.e 17.11-latest, 18.08-latest
 - Refactor and remove code that can be used as a resource instead of a recipe

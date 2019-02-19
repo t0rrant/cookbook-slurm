@@ -17,15 +17,33 @@ platforms:
       pid_one_command: /bin/systemd
       intermediate_instructions:
         - RUN /usr/bin/apt-get update
+    attributes:
+      slurm:
+        conf:
+          conf:
+            ProctrackType: 'proctrack/pgid'
+            TaskPlugin: 'task/none'
   - name: ubuntu-16.04
     driver:
       image: dokken/ubuntu-16.04
       pid_one_command: /bin/systemd
       intermediate_instructions:
         - RUN /usr/bin/apt-get update
+    attributes:
+      slurm:
+        conf:
+          conf:
+            ProctrackType: 'proctrack/pgid'
+            TaskPlugin: 'task/none'
   - name: ubuntu-18.04
     driver:
       image: dokken/ubuntu-18.04
       pid_one_command: /bin/systemd
       intermediate_instructions:
         - RUN /usr/bin/apt-get update
+    attributes:
+      slurm:
+        conf:
+          conf:
+            ProctrackType: 'proctrack/pgid'
+            TaskPlugin: 'task/none'
