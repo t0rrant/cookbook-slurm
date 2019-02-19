@@ -38,7 +38,6 @@ is at least *17.02* due to hostname behaviour of slurmdbd.
 - Remove static types of nodes and partitions and support static generation, maybe by passing the Hash directly 
 - Review cookbook to ensure it respects wrapper cookbook support
 - Complete spec files
-- Add InSpec verification to travis, first check why apt_repository check is failing. It works locally with dokken and vagrant, also works in gitlab-ci
 - Require shifter cookbook
 
 ## Usage
