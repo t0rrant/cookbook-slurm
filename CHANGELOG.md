@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 This file is used to list changes made in each version of the slurm cookbook.
 
+## 0.3.9
+
+### Changed
+
+- proxy is now passed as attribute
+- action for slurm services to `:start`
+
 ## 0.3.8
 
 ### Changed
