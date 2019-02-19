@@ -22,7 +22,7 @@ bin/*
 Berksfile.lock
 .zero-knife.rb
 Policyfile.lock.json
-.delivery/*
+
 
 # IDEA
 .idea/*

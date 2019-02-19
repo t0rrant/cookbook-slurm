@@ -1,0 +1,9 @@
+[local_phases]
+unit = "echo skipping"
+lint = 'chef exec cookstyle --display-cop-names --extra-details'
+syntax = "chef exec foodcritic . -t ~supermarket"
+provision = "echo skipping"
+deploy = "echo skipping"
+smoke = "echo skipping"
+functional = "echo skipping"
+cleanup = "echo skipping"
