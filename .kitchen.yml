@@ -29,6 +29,7 @@ suites:
   - name: monolith
     run_list:
       - recipe[slurm::database]
+      - recipe[slurm::munge]
       - recipe[slurm::default]
       - recipe[slurm::accounting]
       - recipe[slurm::server]
