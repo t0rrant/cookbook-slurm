@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/ist-dsi/slurm-cluster.svg?branch=master)](https://travis-ci.org/ist-dsi/slurm-cluster)
-[![Cookbook Version](https://img.shields.io/cookbook/v/slurm-cluster.svg)](https://supermarket.chef.io/cookbooks/slurm_cluster)
+[![Build Status](https://travis-ci.org/ist-dsi/cookbook-slurm.svg?branch=master)](https://travis-ci.org/ist-dsi/cookbook-slurm)
+[![Cookbook Version](https://img.shields.io/cookbook/v/slurm.svg)](https://supermarket.chef.io/cookbooks/slurm)
 
 # slurm
 
