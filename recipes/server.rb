@@ -122,5 +122,5 @@ service 'Slurm Server Service' do
   reload_command " /etc/init.d/#{service_name} reconfig"
   restart_command "systemctl restart #{service_name}"
   status_command "systemctl status #{service_name}"
-  action :nothing
+  action :start
 end
