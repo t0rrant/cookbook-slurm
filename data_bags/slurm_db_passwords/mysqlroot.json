@@ -1,0 +1,10 @@
+{
+  "id": "mysqlroot",
+  "mysqlroot": {
+    "encrypted_data": "Ei+CMbdcjAE8q/3QvEmfbC2MqZilBJpc91DtcxY8rcGLAtN3ws5k1YibvH6X\nbNXdjgyz\n",
+    "iv": "96LVjV/X/vwqKAXT\n",
+    "auth_tag": "sQlMLAhWsiM/ziwG70nObw==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  }
+}

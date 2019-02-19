@@ -1,0 +1,10 @@
+{
+  "id": "slurm",
+  "slurm": {
+    "encrypted_data": "JyFdm+THxfcIelzTVoMxPZ1M5pwCGgaWM/oQrOnroZJAmnYW+dt30uxb20kT\nG8hCPjTK\n",
+    "iv": "HfxUgFpGC0yF0jy8\n",
+    "auth_tag": "vuTsecLj6yoq0tD3fgeE+w==\n",
+    "version": 3,
+    "cipher": "aes-256-gcm"
+  }
+}

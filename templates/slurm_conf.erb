@@ -1,0 +1,20 @@
+<%= node['slurm']['custom_template_banner'] %>
+
+<% node['slurm']['conf']['conf'].each do |option,value|%>
+  <% if value.is_a?(Hash) %>
+    [<%= option %>]
+    <% value.each do |k,v| %>
+      <%= k %>=<%= v %>
+    <% end %>
+  <% else %>
+    <%= option %>=<%= value %>
+  <% end %>
+<% end %>
+
+<% if @node_def %>
+  <%= @node_def %>
+<% end %>
+
+<% if @partition_def %>
+  <%= @partition_def %>
+<% end %>

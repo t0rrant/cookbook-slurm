@@ -1,0 +1,44 @@
+log_level: debug
+
+driver:
+  name: vagrant
+  customize:
+    memory: 4096
+    cpus: 2
+
+provisioner:
+  name: chef_zero
+  data_bags_path: "data_bags"
+  encrypted_data_bag_secret_key_path: "secrets/encrypted_data_bag_secret"
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu-16
+    driver:
+      box: bento/ubuntu-16.04
+  - name: ubuntu-18
+    driver:
+      box: bento/ubuntu-16.04
+  - name: debian-9
+    driver:
+      box: bento/debian-9.0
+
+suites:
+  - name: monolith
+    run_list:
+      - recipe[slurm-cluster::database]
+      - recipe[slurm-cluster::default]
+      - recipe[slurm-cluster::accounting]
+      - recipe[slurm-cluster::server]
+      - recipe[slurm-cluster::compute]
+      - recipe[slurm-cluster::plugin_shifter]
+    verifier:
+      inspec_tests:
+        - test/integration/database
+        - test/integration/default
+        - test/integration/accounting
+        - test/integration/server
+        - test/integration/compute
+    attributes:

@@ -1,0 +1,28 @@
+<%= node['slurm']['custom_template_banner'] %>
+
+###############################################################################
+# slurmdb.conf is an ASCII file which describes Slurm
+# Database Daemon (SlurmDBD) configuration information.
+# The contents of the file are case insensitive except for the names of
+# nodes and files. Any text following a "#" in the configuration file is
+# treated as a comment through the end of that line. The size of each
+# line in the file is limited to 1024 characters. Changes to the
+# configuration file take effect upon restart of SlurmDbd or daemon
+# receipt of the SIGHUP signal unless otherwise noted.
+#
+# This file should be only on the computer where SlurmDBD executes and
+# should only be readable by the user which executes SlurmDBD (e.g.
+# "slurm"). This file should be protected from unauthorized access since
+# it contains a database password.
+###############################################################################
+
+<% node['slurm']['accounting']['conf'].each do |option,value|%>
+  <% if value.is_a?(Hash) %>
+    [<%= option %>]
+    <% value.each do |k,v| %>
+      <%= k %>=<%= v %>
+    <% end %>
+  <% else %>
+  <%= option %>=<%= value %>
+  <% end %>
+<% end %>

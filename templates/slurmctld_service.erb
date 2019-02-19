@@ -1,0 +1,14 @@
+[Unit]
+Description=Slurm controller daemon
+After=network.target <%= node['slurm']['server']['service_req'] %>
+ConditionPathExists=<%= node['slurm']['server']['conf_file'] %>
+
+[Service]
+Type=forking
+EnvironmentFile=<%= node['slurm']['server']['env_file'] %>
+ExecStart=<%= node['slurm']['server']['bin_file'] %> $SLURMCTLD_OPTIONS
+ExecReload=/bin/kill -HUP $MAINPID
+PIDFile=<%= node['slurm']['server']['pid_file'] %>
+
+[Install]
+WantedBy=multi-user.target

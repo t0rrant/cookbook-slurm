@@ -1,0 +1,10 @@
+default['slurm']['server']['conf_file'] = node['slurm']['common']['conf_dir'] + '/slurm.conf'
+default['slurm']['server']['env_file'] = '/etc/default/slurmctld'
+default['slurm']['server']['bin_file'] = '/usr/sbin/slurmctld'
+default['slurm']['server']['pid_file'] = '/var/run/slurm-llnl/slurmctld.pid'
+default['slurm']['server']['systemd_file'] = '/lib/systemd/system/slurmctld.service'
+default['slurm']['server']['service_req'] = '' # this should be either empty or the name of the storage service client(s) that slurm might depend on (ceph, beegfs, lustre)
+default['slurm']['server']['cgroup_dir'] = node['slurm']['common']['conf_dir'] + '/cgroup'
+default['slurm']['server']['cgroup_conf_file'] = node['slurm']['common']['conf_dir'] + '/cgroup.conf'
+default['slurm']['server']['plugstack_dir'] = node['slurm']['common']['conf_dir'] + '/plugstack.conf.d'
+default['slurm']['server']['plugstack_conf_file'] = node['slurm']['common']['conf_dir'] + '/plugstack.conf'

@@ -1,0 +1,5 @@
+<%= node['slurm']['custom_template_banner'] %>
+
+<% @dirs.each do |dir| %>
+<%= dir  %> *(rw,sync,no_subtree_check,no_root_squash)
+<% end %>
