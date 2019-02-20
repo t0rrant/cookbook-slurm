@@ -1,6 +1,6 @@
 name 'slurm'
 
-license 'MIT'
+license 'Apache-2.0'
 
 maintainer 'Manuel Torrinha'
 maintainer_email 'manuel.torrinha@tecnico.ulisboa.pt'

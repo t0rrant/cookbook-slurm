@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ist-dsi/cookbook-slurm.svg?branch=master)](https://travis-ci.org/ist-dsi/cookbook-slurm)
+[![Build Status](https://travis-ci.org/t0rrant/cookbook-slurm.svg?branch=master)](https://travis-ci.org/ist-dsi/cookbook-slurm)
 [![Cookbook Version](https://img.shields.io/cookbook/v/slurm.svg)](https://supermarket.chef.io/cookbooks/slurm)
 
 # slurm
