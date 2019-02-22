@@ -66,4 +66,5 @@ suites:
         - test/integration/server
         - test/integration/compute
     attributes:
-      shifter: true
+      slurm:
+        shifter: true

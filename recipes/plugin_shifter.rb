@@ -1,4 +1,5 @@
-if !node['shifter'].nil? && node['shifter'].eql?(true)
+if !node['slurm']['shifter'].nil? && node['slurm']['shifter'].eql?(true)
+  node.normal['shifter'] = {}
   node.normal['shifter']['imagegw_fqdn'] = node['slurm']['control_machine']
 
   shifter_install 'Install Shifter Runtime and make its binary available' do
