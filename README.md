@@ -277,3 +277,7 @@ The munge key should be a base64 key, based on binary data generated from runnin
 - `$ dd if=/dev/urandom bs=1 count=1024 > munge.key`
 
 For more information on generating a munge key see the [munge documentation](https://github.com/dun/munge/wiki/Installation-Guide).
+
+## Authors
+
+* Manuel Torrinha <manuel.torrinha@tecnico.ulisboa.pt>
