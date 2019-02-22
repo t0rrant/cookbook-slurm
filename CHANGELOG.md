@@ -5,6 +5,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 This file is used to list changes made in each version of the slurm cookbook.
 
+## 0.4.0
+
+### Added
+
+- Shifter support and dependency
+- Kitchen suite with shifter support
+- Older Ubuntu/Debian images 
+
 ## 0.3.9
 
 ### Changed
