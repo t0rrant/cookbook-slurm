@@ -11,32 +11,10 @@ provisioner:
   deprecations_as_errors: false
 
 platforms:
-  - name: debian-8
-    driver:
-      image: dokken/debian-8
-      intermediate_instructions:
-        - RUN /usr/bin/apt-get update
-    attributes:
-      slurm:
-        conf:
-          conf:
-            ProctrackType: 'proctrack/pgid'
-            TaskPlugin: 'task/none'
   - name: debian-9
     driver:
       image: dokken/debian-9
       pid_one_command: /bin/systemd
-      intermediate_instructions:
-        - RUN /usr/bin/apt-get update
-    attributes:
-      slurm:
-        conf:
-          conf:
-            ProctrackType: 'proctrack/pgid'
-            TaskPlugin: 'task/none'
-  - name: ubuntu-14.04
-    driver:
-      image: dokken/ubuntu-14.04
       intermediate_instructions:
         - RUN /usr/bin/apt-get update
     attributes:

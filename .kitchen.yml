@@ -15,18 +15,12 @@ verifier:
   name: inspec
 
 platforms:
-  - name: ubuntu-14
-    driver:
-      box: bento/ubuntu-14.04
   - name: ubuntu-16
     driver:
       box: bento/ubuntu-16.04
   - name: ubuntu-18
     driver:
       box: bento/ubuntu-18.04
-  - name: debian-8
-    driver:
-      box: bento/debian-8.0
   - name: debian-9
     driver:
       box: bento/debian-9.0
